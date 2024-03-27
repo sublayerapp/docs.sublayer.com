@@ -11,6 +11,12 @@ npm run dev
 ```
 
 Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+To have the iframe populate run blueprints.sublayer.com locally on 3001
+
+```bash
+cd blueprints.sublayer.com
+rails s -p 3001
+```
 
 ## Editing
 
