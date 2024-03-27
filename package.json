@@ -14,6 +14,7 @@
     "@headlessui/react": "^1.7.13",
     "@markdoc/markdoc": "^0.4.0",
     "@markdoc/next.js": "^0.3.4",
+    "@segment/snippet": "^5.2.1",
     "@sindresorhus/slugify": "^2.1.0",
     "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.12",
