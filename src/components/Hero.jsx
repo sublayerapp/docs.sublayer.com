@@ -14,7 +14,7 @@ import blurIndigoImage from '@/images/blur-indigo.png'
 const codeLanguage = 'ruby'
 const code = `class CodeFromDescriptionGenerator < Sublayer::Generators::Base
   llm_output_adapter type: :single_string,
-    name: "generated_code,
+    name: "generated_code",
     description: "The generated code in the requested language"
 
   def initialize(description:, technologies:)
