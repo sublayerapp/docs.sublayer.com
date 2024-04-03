@@ -1,12 +1,12 @@
 ---
-title: Getting started
+title: Quick Start
 ---
 
 Sublayer is a model-agnostic Ruby Generative AI DSL and framework to effortlessly integrate generative AI into your applications. {% .lead %}
 
 {% quick-links %}
 
-{% quick-link title="Installation" icon="installation" href="/#installation" description="Step-by-step guides to setting up your system and installing the library." /%}
+{% quick-link title="Installation" icon="installation" href="/docs/installation" description="Step-by-step guides to setting up your system and installing the library." /%}
 
 {% quick-link title="Framework guide" icon="presets" href="/#framework-guide" description="Learn about sublayer concepts and conventions." /%}
 

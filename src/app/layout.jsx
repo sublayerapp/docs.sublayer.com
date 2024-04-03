@@ -6,6 +6,7 @@ import clsx from 'clsx'
 
 import { Providers } from '@/app/providers'
 import { Layout } from '@/components/Layout'
+import { Analytics } from "@vercel/analytics/react";
 
 import '@/styles/tailwind.css'
 
@@ -25,10 +26,10 @@ const lexend = localFont({
 export const metadata = {
   title: {
     template: '%s - Docs',
-    default: 'Sublayer - a ruby DSL for Gen AI.',
+    default: 'Sublayer - Ruby AI Framework',
   },
   description:
-    'Sublayer is a Ruby DSL for Gen AI. It allows you to manage your AI models with ease.',
+    'Sublayer is a Ruby AI Framework that simplifies building Gen AI-powered applications.',
 }
 
 function renderSnippet() {
@@ -46,11 +47,13 @@ export default function RootLayout({ children }) {
       suppressHydrationWarning
     >
       <head>
+        <link rel="icon" href="/favicon.ico" />
         <Script dangerouslySetInnerHTML={{ __html: renderSnippet() }} />
       </head>
       <body className="flex min-h-full bg-white dark:bg-slate-900">
         <Providers>
           <Layout>{children}</Layout>
+          <Analytics />
         </Providers>
       </body>
     </html>

@@ -6,69 +6,84 @@ nextjs:
     description: Quidem magni aut exercitationem maxime rerum eos.
 ---
 
-Quasi sapiente voluptates aut minima non doloribus similique quisquam. In quo expedita ipsum nostrum corrupti incidunt. Et aut eligendi ea perferendis.
+To get started with Sublayer, you need to install it to your system.
 
----
-
-## Quis vel iste dicta
-
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
-
-### Et pariatur ab quas
-
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
-
-```js
-/** @type {import('@tailwindlabs/lorem').ipsum} */
-export default {
-  lorem: 'ipsum',
-  dolor: ['sit', 'amet', 'consectetur'],
-  adipiscing: {
-    elit: true,
-  },
-}
+```shell
+$ gem install sublayer
 ```
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+or add it to your gemfile
 
-### Natus aspernatur iste
-
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
-
-Voluptas beatae omnis omnis voluptas. Cum architecto ab sit ad eaque quas quia distinctio. Molestiae aperiam qui quis deleniti soluta quia qui. Dolores nostrum blanditiis libero optio id. Mollitia ad et asperiores quas saepe alias.
+```ruby
+gem "sublayer"
+```
 
 ---
 
-## Quos porro ut molestiae
+## Set Up Your Preferred LLM
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
+After installing Sublayer, you can choose between any of the available LLM
+providers we support.
 
-### Voluptatem quas possimus
+### OpenAI (Default)
+[More Info]('/docs/providers/openai')
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+Set your `OPENAI_API_KEY` environment variable. (Visit [OpenAI](https://openai.com/product) to get an API key.)
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+Usage:
 
-### Id vitae minima
+```ruby
+Sublayer.configuration.ai_provider = Sublayer::Providers::OpenAI
+Sublayer.configuration.ai_model = "gpt-4-turbo-preview"
+```
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+### Anthropic
+[More Info]('/docs/providers/anthropic')
 
-Voluptas beatae omnis omnis voluptas. Cum architecto ab sit ad eaque quas quia distinctio. Molestiae aperiam qui quis deleniti soluta quia qui. Dolores nostrum blanditiis libero optio id. Mollitia ad et asperiores quas saepe alias.
+Supported Models: Claude 3 Opus, Claude 3 Haiku, Claude 3 Sonnet
 
----
+Set your `ANTHROPIC_API_KEY` environment variable. (Visit [Anthropic](https://anthropic.com/) to get an API key.)
 
-## Vitae laborum maiores
+Usage:
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur.
+```ruby
+Sublayer.configuration.ai_provider = Sublayer::Providers::Claude
+Sublayer.configuration.ai_model ="claude-3-opus-20240229"
+```
 
-### Corporis exercitationem
+### Google
+[More Info]('/docs/providers/google')
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+Set your `GOOGLE_API_KEY` environment variable. (Visit [Google AI Studio](https://ai.google.dev/) to get an API key.)
 
-Possimus saepe veritatis sint nobis et quam eos. Architecto consequatur odit perferendis fuga eveniet possimus rerum cumque. Ea deleniti voluptatum deserunt voluptatibus ut non iste. Provident nam asperiores vel laboriosam omnis ducimus enim nesciunt quaerat. Minus tempora cupiditate est quod.
+Usage:
 
-### Reprehenderit magni
+```ruby
+Sublayer.configuration.ai_provider = Sublayer::Providers::Gemini
+Sublayer.configuration.ai_model = "gemini-pro"
+```
 
-Sit commodi iste iure molestias qui amet voluptatem sed quaerat. Nostrum aut pariatur. Sint ipsa praesentium dolor error cumque velit tenetur quaerat exercitationem. Consequatur et cum atque mollitia qui quia necessitatibus.
+### Groq
+[More Info]('/docs/providers/groq')
 
-Voluptas beatae omnis omnis voluptas. Cum architecto ab sit ad eaque quas quia distinctio. Molestiae aperiam qui quis deleniti soluta quia qui. Dolores nostrum blanditiis libero optio id. Mollitia ad et asperiores quas saepe alias.
+Set your `GROQ_API_KEY` environment variable. (Visit [Groq](https://console.groq.com/) to get an API key.)
+
+Usage:
+
+```ruby
+Sublayer.configuration.ai_provider = Sublayer::Providers::Groq
+Sublayer.configuration.ai_model = "mixtral-8x7b-32768"
+```
+
+### Nous Research (Running locally):
+[More Info]('/docs/providers/nous-research')
+
+Follow our [local model set up
+instructions]('/docs/guides/running-local-models')
+
+Usage:
+
+```ruby
+Sublayer.configuration.ai_provider = Sublayer::Providers::Local
+Sublayer.configuration.ai_model = "LLaMA_CPP"
+```
