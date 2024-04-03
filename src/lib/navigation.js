@@ -2,55 +2,45 @@ export const navigation = [
   {
     title: 'Introduction',
     links: [
-      { title: 'Getting started', href: '/' },
+      { title: 'Getting started', href: '/#doc-title' },
       { title: 'Installation', href: '/docs/installation' },
+      { title: 'Configuration', href: '/docs/configuration' },
+    ],
+  },
+  {
+    title: 'Guides',
+    links: [
+      { title: 'Build Voice chat with an LLM on Rails', href: '/docs/guides/voice-chat' },
+      { title: 'Build a Command-line Command Generator', href: '/docs/guides/command-line-command-generator' },
+      { title: 'Build a Discord Chat Bot', href: '/docs/guides/discord-chatbot' },
+      { title: 'Running Local Models', href: '/docs/guides/running-local-models' },
+      { title: 'Blueprints', href: '/docs/guides/blueprints'},
     ],
   },
   {
     title: 'Core concepts',
     links: [
-      { title: 'Understanding caching', href: '/docs/understanding-caching' },
-      {
-        title: 'Predicting user behavior',
-        href: '/docs/predicting-user-behavior',
-      },
-      { title: 'Basics of time-travel', href: '/docs/basics-of-time-travel' },
-      {
-        title: 'Introduction to string theory',
-        href: '/docs/introduction-to-string-theory',
-      },
-      { title: 'The butterfly effect', href: '/docs/the-butterfly-effect' },
+      { title: 'Overview', href: '/docs/concepts-overview' },
+      { title: 'Generators', href: '/docs/generators' },
+      { title: 'Actions', href: '/docs/actions', },
+      { title: 'Tasks', href: '/docs/tasks' },
+      { title: 'Agents', href: '/docs/agents', },
     ],
   },
   {
-    title: 'Advanced guides',
+    title: "Supported Models",
     links: [
-      { title: 'Writing plugins', href: '/docs/writing-plugins' },
-      { title: 'Neuralink integration', href: '/docs/neuralink-integration' },
-      { title: 'Temporal paradoxes', href: '/docs/temporal-paradoxes' },
-      { title: 'Testing', href: '/docs/testing' },
-      { title: 'Compile-time caching', href: '/docs/compile-time-caching' },
-      {
-        title: 'Predictive data generation',
-        href: '/docs/predictive-data-generation',
-      },
-    ],
+      { title: "OpenAI (gpt-3.5, gpt-4) (default)", href: "/docs/providers/openai" },
+      { title: "Claude (opus, sonnet, haiku)", href: "/docs/providers/claude" },
+      { title: "Google (gemini-1.0, gemini-1.5)", href: "/docs/providers/google" },
+      { title: "Groq (mixtral-8x7b)", href: "/docs/providers/groq" },
+      { title: "Nous Research (Hermes-2-Pro)", href: "/docs/providers/nous-research" },
+    ]
   },
   {
-    title: 'API reference',
+    title: 'Community',
     links: [
-      { title: 'CacheAdvance.predict()', href: '/docs/cacheadvance-predict' },
-      { title: 'CacheAdvance.flush()', href: '/docs/cacheadvance-flush' },
-      { title: 'CacheAdvance.revert()', href: '/docs/cacheadvance-revert' },
-      { title: 'CacheAdvance.regret()', href: '/docs/cacheadvance-regret' },
-    ],
-  },
-  {
-    title: 'Contributing',
-    links: [
-      { title: 'How to contribute', href: '/docs/how-to-contribute' },
-      { title: 'Architecture guide', href: '/docs/architecture-guide' },
-      { title: 'Design principles', href: '/docs/design-principles' },
+      { title: 'Join Our Discord', href: 'https://discord.gg/cy7Kru3WRW' },
     ],
   },
 ]
