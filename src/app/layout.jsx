@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
     >
       <head>
         <link rel="icon" href="/favicon.ico" />
-        <Script dangerouslySetInnerHTML={{ __html: renderSnippet() }} />
+        <Script id="segment-script" dangerouslySetInnerHTML={{ __html: renderSnippet() }} />
       </head>
       <body className="flex min-h-full bg-white dark:bg-slate-900">
         <Providers>
