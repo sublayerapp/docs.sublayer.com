@@ -70,8 +70,8 @@ export function Hero() {
               priority
             />
             <div className="relative">
-              <p className="inline bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 bg-clip-text font-display text-5xl tracking-tight text-transparent">
-                A model-agnostic AI framework for Ruby
+              <p className="inline bg-gradient-to-r from-rose-500 via-rose-600 to-rose-700 bg-clip-text font-display text-5xl tracking-tight text-transparent">
+                A model-agnostic AI framework for <span className="text-6xl font-semibold">Ruby</span>
               </p>
               <p className="mt-3 text-2xl tracking-tight text-slate-400">
                 Combine Generators, Actions, Tasks, and Agents to build AI-powered applications!
