@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { useTheme } from "next-themes"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
@@ -10,7 +11,6 @@ import { Logo, Logomark } from '@/components/Logo'
 import { MobileNavigation } from '@/components/MobileNavigation'
 import { Navigation } from '@/components/Navigation'
 import { Search } from '@/components/Search'
-import { ThemeSelector } from '@/components/ThemeSelector'
 
 function GitHubIcon(props) {
   return (
@@ -56,7 +56,6 @@ function Header() {
         <Search />
       </div>
       <div className="relative flex basis-0 justify-end gap-6 sm:gap-8 md:flex-grow">
-        <ThemeSelector className="relative z-10" />
         <Link href="https://github.com/sublayerapp/sublayer" className="group" aria-label="GitHub">
           <GitHubIcon className="h-6 w-6 fill-slate-400 group-hover:fill-slate-500 dark:group-hover:fill-slate-300" />
         </Link>
@@ -68,6 +67,9 @@ function Header() {
 export function Layout({ children }) {
   let pathname = usePathname()
   let isHomePage = pathname === '/'
+  let { theme, setTheme } = useTheme()
+
+  setTheme("light");
 
   return (
     <div className="flex w-full flex-col">
