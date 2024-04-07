@@ -11,8 +11,8 @@ export const navigation = [
     title: 'Guides',
     links: [
       { title: "Overview", href: "/docs/guides/overview" },
-      { title: 'Build voice chat with an LLM on Rails', href: '/docs/guides/voice-chat' },
-      { title: 'Build a Command line Command Generator', href: '/docs/guides/command-line-command-generator' },
+      { title: 'Build voice chat with an LLM on Rails(wip)', href: '/docs/guides/voice-chat' },
+      { title: 'Build a Command line Command Generator(wip)', href: '/docs/guides/command-line-command-generator' },
       { title: 'Running Local Models(wip)', href: '/docs/guides/running-local-models' },
     ],
   },
