@@ -20,6 +20,6 @@ export function Iframe({ path }) {
   })
 
   return (
-    <iframe src={`${src}/${path}`} width="100%" title="Rails Content"></iframe>
+    <iframe src={`${src}/${path}`} width="100%" title="Rails Content" className="min-h-52"></iframe>
   )
 }
