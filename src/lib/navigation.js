@@ -19,11 +19,11 @@ export const navigation = [
   {
     title: 'Core concepts',
     links: [
-      { title: 'Overview', href: '/docs/concepts-overview' },
-      { title: 'Generators', href: '/docs/generators' },
-      { title: 'Actions', href: '/docs/actions', },
-      { title: 'Tasks', href: '/docs/tasks' },
-      { title: 'Agents', href: '/docs/agents', },
+      { title: 'Overview', href: '/docs/concepts/overview' },
+      { title: 'Generators', href: '/docs/concepts/generators' },
+      { title: 'Actions', href: '/docs/concepts/actions', },
+      { title: 'Tasks', href: '/docs/concepts/tasks' },
+      { title: 'Agents', href: '/docs/concepts/agents', },
     ],
   },
   {

@@ -8,7 +8,7 @@ Sublayer is a model-agnostic AI Agent framework in Ruby that allows you to effor
 
 {% quick-link title="Quick Start" icon="theming" href="/docs/quick_start" description="Get started with Sublayer right away." /%}
 {% quick-link title="Installation" icon="installation" href="/docs/installation" description="Step-by-step guides to setting up your system and installing the library." /%}
-{% quick-link title="Framework Guide" icon="presets" href="/#framework-guide" description="Learn about Sublayer concepts and conventions." /%}
+{% quick-link title="Framework Guide" icon="presets" href="/docs/concepts/overview" description="Learn about Sublayer concepts and conventions." /%}
 {% quick-link title="Examples" icon="plugins" href="/docs/guides/overview" description="Browse example code showing how you can use the Sublayer gem" /%}
 
 {% /quick-links %}

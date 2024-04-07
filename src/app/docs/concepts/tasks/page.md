@@ -1,8 +1,14 @@
-### Tasks
+---
+title: Sublayer Tasks
+nextjs:
+  metadata:
+    title: Sublayer Tasks
+    description: Detailed guide on how to use and build your own Sublayer Tasks
+---
 
 Tasks combine Generators and Actions to accomplish a specific goal. They involve a sequence of generation and action steps that may include basic decision-making and flow control. Tasks are the high-level building blocks that define the desired outcome.
 
-#### Examples:
+## Examples:
 
 - ModifyFileContentsTask: Generates new file contents based on the existing contents and a set of rules, and then saves the new contents to the file.
 
