@@ -10,7 +10,7 @@ simple and easy to user interface.
 
 ---
 
-### Step 1
+### Step 1 - Installation
 
 Install the Sublayer gem:
 
@@ -24,7 +24,7 @@ or add it to your Gemfile:
 gem "sublayer"
 ```
 
-### Step 2
+### Step 2 - Environment Setup
 
 Set your OpenAI API key as an environment variable:
 
@@ -34,7 +34,7 @@ export OPENAI_API_KEY="your-api-key"
 
 Don't have a key? Visit [OpenAI](https://openai.com/product) to get one.
 
-### Step 3
+### Step 3a - Create a Generator
 
 Create a Sublayer Generator. Generators are responsible for taking input from
 your application and generating output using an LLM like GPT-4.
@@ -76,12 +76,13 @@ module Sublayer
 
 To learn more about everything you can do with a generator, check out the [Generators](/docs/concepts/generators) page.
 
-Try generating making your own generator with the interactive code generator below:
+### Step 3b - Try Generating One!
+Try generating making your own generator with our interactive code generator below:
 
 {% iframe path="interactive-code-generator" /%}
 
 
-### Step 4
+### Step 4 - Use Your Generator
 
 Require your generator and the Sublayer gem and use it in your application:
 
