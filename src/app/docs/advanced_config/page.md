@@ -1,23 +1,9 @@
 ---
-title: Installation
+title: Advanced Config
 nextjs:
   metadata:
-    title: Installation
-    description: Quidem magni aut exercitationem maxime rerum eos.
----
-
-To get started with Sublayer, you need to install it to your system.
-
-```shell
-$ gem install sublayer
-```
-
-or add it to your gemfile
-
-```ruby
-gem "sublayer"
-```
-
+    title: Advanced Config
+    description: Advanced Configuration for the Sublayer Gem
 ---
 
 ## Set Up Your Preferred LLM

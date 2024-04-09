@@ -4,14 +4,14 @@ export const navigation = [
     links: [
       { title: 'Quick Links', href: '/' },
       { title: 'Quick Start', href: '/docs/quick_start' },
-      { title: 'Installation', href: '/docs/installation' }
+      { title: 'Advanced Config', href: '/docs/advanced_config' }
     ],
   },
   {
     title: 'Guides',
     links: [
       { title: "Overview", href: "/docs/guides/overview" },
-      { title: 'Build voice chat with an LLM on Rails(wip)', href: '/docs/guides/voice-chat' },
+      { title: 'LLM Voice Chat w/Rails', href: '/docs/guides/voice-chat' },
       { title: 'Build a Command line Command Generator(wip)', href: '/docs/guides/command-line-command-generator' },
       { title: 'Running Local Models(wip)', href: '/docs/guides/running-local-models' },
     ],

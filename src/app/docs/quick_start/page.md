@@ -77,7 +77,7 @@ module Sublayer
 To learn more about everything you can do with a generator, check out the [Generators](/docs/concepts/generators) page.
 
 ### Step 3b - Try Generating One!
-Try generating making your own generator with our interactive code generator below:
+Try generating your own generator with our interactive code generator below:
 
 {% iframe path="interactive-code-generator" /%}
 
