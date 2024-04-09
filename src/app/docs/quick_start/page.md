@@ -43,6 +43,10 @@ Here's an example of a generator that takes a description of code to generate
 and the technologies to use and generates code with an llm:
 
 ```ruby
+# ./code_from_description_generator.rb
+
+require "sublayer"
+
 module Sublayer
   module Generators
     class CodeFromDescriptionGenerator < Base
@@ -84,9 +88,13 @@ Try generating your own generator with our interactive code generator below:
 
 ### Step 4 - Use Your Generator
 
-Require your generator and the Sublayer gem and use it in your application:
+Require the Sublayer gem and your generator call generate!
+
+Here's an example of how you might use the `CodeFromDescriptionGenerator` above:
 
 ```ruby
+# ./example.rb
+
 require 'sublayer'
 require './code_from_description_generator'
 
