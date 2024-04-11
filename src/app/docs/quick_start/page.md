@@ -5,7 +5,7 @@ title: Quick Start
 ## Quick start
 
 Sublayer is made up of four main concepts: Generators, Actions, Tasks, and
-Agents. You can concepts combine to create powerful AI-powered applications in a
+Agents. These concepts combine to create powerful AI-powered applications in a
 simple and easy to user interface.
 
 ---
