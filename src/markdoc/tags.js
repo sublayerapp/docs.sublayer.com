@@ -1,6 +1,7 @@
 import { Callout } from '@/components/Callout'
 import { QuickLink, QuickLinks } from '@/components/QuickLinks'
 import { Iframe } from '@/components/Iframe'
+import { VideoEmbed } from '@/components/VideoEmbed'
 
 const tags = {
   callout: {
@@ -49,7 +50,14 @@ const tags = {
     attributes: {
       path: { type: String }
     }
+  },
+  'video-embed': {
+    render: VideoEmbed,
+    attributes: {
+      src: { type: String }
+    }
   }
+
 }
 
 export default tags
