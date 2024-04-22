@@ -77,7 +77,7 @@ export function Hero() {
                 Combine Generators, Actions, Tasks, and Agents to build AI-powered applications!
               </p>
               <div className="mt-8 flex gap-4 md:justify-center lg:justify-start">
-                <Button href="/#doc-title">Get started</Button>
+                <Button href="/docs/quick_start">Get started</Button>
                 <Button href="https://github.com/sublayerapp/sublayer" variant="secondary" target="_blank">
                   View on GitHub
                 </Button>
