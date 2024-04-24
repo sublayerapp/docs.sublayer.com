@@ -13,8 +13,8 @@ export const navigation = [
       { title: "Overview", href: "/docs/guides/overview" },
       { title: 'LLM Voice Chat w/Rails', href: '/docs/guides/voice-chat' },
       { title: "Build a TDD Bot", href: "/docs/guides/tdd_bot" },
+      { title: 'Running Local Models', href: '/docs/guides/running-local-models' },
       { title: 'Build a Command line Command Generator(wip)', href: '/docs/guides/command-line-command-generator' },
-      { title: 'Running Local Models(wip)', href: '/docs/guides/running-local-models' },
     ],
   },
   {

@@ -6,8 +6,93 @@ nextjs:
     description: Guide on how to set up local models to work with Sublayer.
 ---
 
-WIP
+To use Sublayer with LLM models locally,
 
-[LLamafile](https://github.com/Mozilla-Ocho/llamafile)
+1. Install Llamfile
+2. Download the model
+3. Run the model with Llamafile
+4. Use the model with Sublayer
+5. Basic Demo
 
-[Hermes 2 Pro (Mistral 7B) from Nous Research](https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B-GGUF)
+## Install [Llamafile](https://github.com/Mozilla-Ocho/llamafile)
+1. ```bash
+   git clone git@github.com:Mozilla-Ocho/llamafile.git
+   ```
+2. [Click to download make](https://cosmo.zip/pub/cosmos/bin/make)
+3. ```bash
+   chmod +x /path/to/make
+   path/to/make -j8
+   sudo path/to/make install PREFIX=/usr/local
+   ```
+
+## Download the [model](https://huggingface.co/models)
+* To find your own model: go to [Hugging Face](https://huggingface.co/models)
+* Or click below to download the recommended Model:
+    * [Meta Llama3](https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf?download=true) [recommended]
+    * [Hermes 2 Pro Mistral 7B](https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B-GGUF/resolve/main/Hermes-2-Pro-Mistral-7B.gguf?download=true)
+
+## Run the model
+* ```bash
+  llamafile -ngl 9999 -m path/to/model.gguf —host 0.0.0.0 -c 2048
+  ```
+* Recommended settings for Apple M1 users:
+  ```bash
+  llamafile -ngl 9999 -m path/to/model.gguf --host 0.0.0.0 -c 2048 --gpu APPLE -t 12
+  ```
+* visit [localhost:8080](http://localhost:8080)
+
+## Use the model with Sublayer (skip to [Basic Demo](#basic-demo) if you don't have a project already)
+1. Add to Gemfile:
+    ```ruby
+    gem 'sublayer'
+    ```
+2. Run:
+    ```bash
+    bundle install
+    ```
+3. Add to your configuration file:
+    ```ruby
+    Sublayer.configuration.ai_provider = Sublayer::Providers::Local
+    Sublayer.configuration.ai_model = "LLaMA_CPP"
+    ```
+4. Build a sublayer generator:
+    {% iframe path="interactive-code-generator" /%}
+
+5. Use in your code:
+    ```ruby
+    MyGenerator.new(attributes).generate
+    ```
+
+## Basic Demo {% #basic-demo %}
+After following the steps above:
+Let's make a ruby project that uses a local model to find a past historical event on today's date
+* ```bash
+  mkdir historical_event_finder
+  cd historical_event_finder
+  touch Gemfile
+  touch historical_event_finder.rb
+  ```
+* ```ruby
+  # Gemfile
+  source 'https://rubygems.org'
+  gem 'sublayer'
+  ```
+* ```bash
+  bundle install
+  ```
+* Build a sublayer generator with the following description:
+    * "generator that uses Time.now and finds a significant historical event from the past that occurred on the same month/day"
+    {% iframe path="interactive-code-generator" example="false" /%}
+* Paste the result from above into `historical_event_generator.rb`
+* Write the following code in `historical_event_finder.rb`:
+  ```ruby
+  # historical_event_finder.rb
+  require 'sublayer'
+  require_relative 'historical_event_generator'
+
+  HistoricalEventGenerator.new.generate
+  ```
+* run your code:
+  ```bash
+  ruby historical_event_finder.rb
+  ```
