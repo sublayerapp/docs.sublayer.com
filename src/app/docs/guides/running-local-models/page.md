@@ -12,6 +12,8 @@ nextjs:
 4. [Use with Sublayer](#use-with-sublayer)
 5. [Basic Demo](#basic-demo)
 
+{% video-embed src="https://www.youtube.com/embed/6l67bUTyb2E?si=IGMSOLPsAIXANB0t" /%}
+
 ## Install [Llamafile](https://github.com/Mozilla-Ocho/llamafile) {% #install-llamafile %}
 1. ```bash
    git clone git@github.com:Mozilla-Ocho/llamafile.git
@@ -81,7 +83,7 @@ Let's make a ruby project to find a past historical event on today's date
   bundle install
   ```
 * Build a sublayer generator with the following description:
-    * "generator that uses Time.now and finds a significant historical event from the past that occurred on the same month/day"
+    * "generator that uses Time.now and finds a fun historical event from the past that occurred on the same month/day as a value"
     {% iframe path="interactive-code-generator" example="false" /%}
 * Paste the result from above into `historical_event_generator.rb` (rename if needed)
 * Write the following code in `historical_event_finder.rb`:
@@ -90,7 +92,10 @@ Let's make a ruby project to find a past historical event on today's date
   require 'sublayer'
   require_relative 'historical_event_generator'
 
-  HistoricalEventGenerator.new.generate
+  Sublayer.configuration.ai_provider = Sublayer::Providers::Local
+  Sublayer.configuration.ai_model = "LLaMA_CPP"
+
+  puts HistoricalEventGenerator.new.generate
   ```
 * run your code:
   ```bash
