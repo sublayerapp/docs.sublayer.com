@@ -6,15 +6,13 @@ nextjs:
     description: Guide on how to set up local models to work with Sublayer.
 ---
 
-To use Sublayer with LLM models locally,
+1. [Install Llamfile](#install-llamafile)
+2. [Download the model](#download-the-model)
+3. [Run the model with Llamafile](#run-the-model)
+4. [Use with Sublayer](#use-with-sublayer)
+5. [Basic Demo](#basic-demo)
 
-1. Install Llamfile
-2. Download the model
-3. Run the model with Llamafile
-4. Use the model with Sublayer
-5. Basic Demo
-
-## Install [Llamafile](https://github.com/Mozilla-Ocho/llamafile)
+## Install [Llamafile](https://github.com/Mozilla-Ocho/llamafile) {% #install-llamafile %}
 1. ```bash
    git clone git@github.com:Mozilla-Ocho/llamafile.git
    ```
@@ -25,13 +23,13 @@ To use Sublayer with LLM models locally,
    sudo path/to/make install PREFIX=/usr/local
    ```
 
-## Download the [model](https://huggingface.co/models)
-* To find your own model: go to [Hugging Face](https://huggingface.co/models)
-* Or click below to download the recommended Model:
+## Download the [model](https://huggingface.co/models) {% #download-the-model %}
+* Click below to download the recommended Model:
     * [Meta Llama3](https://huggingface.co/QuantFactory/Meta-Llama-3-8B-Instruct-GGUF/resolve/main/Meta-Llama-3-8B-Instruct.Q5_K_M.gguf?download=true) [recommended]
     * [Hermes 2 Pro Mistral 7B](https://huggingface.co/NousResearch/Hermes-2-Pro-Mistral-7B-GGUF/resolve/main/Hermes-2-Pro-Mistral-7B.gguf?download=true)
+* To find your own model: go to [Hugging Face](https://huggingface.co/models)
 
-## Run the model
+## Run the model {% #run-the-model %}
 * ```bash
   llamafile -ngl 9999 -m path/to/model.gguf —host 0.0.0.0 -c 2048
   ```
@@ -41,7 +39,8 @@ To use Sublayer with LLM models locally,
   ```
 * visit [localhost:8080](http://localhost:8080)
 
-## Use the model with Sublayer (skip to [Basic Demo](#basic-demo) if you don't have a project already)
+
+## Use with Sublayer (skip to [Basic Demo](#basic-demo) if you don't have a project) {% #use-with-sublayer %}
 1. Add to Gemfile:
     ```ruby
     gem 'sublayer'
@@ -64,9 +63,9 @@ To use Sublayer with LLM models locally,
     ```
 
 ## Basic Demo {% #basic-demo %}
-After following the steps above:
-Let's make a ruby project that uses a local model to find a past historical event on today's date
+Let's make a ruby project to find a past historical event on today's date
 * ```bash
+  # bash
   mkdir historical_event_finder
   cd historical_event_finder
   touch Gemfile
@@ -78,12 +77,13 @@ Let's make a ruby project that uses a local model to find a past historical even
   gem 'sublayer'
   ```
 * ```bash
+  # bash
   bundle install
   ```
 * Build a sublayer generator with the following description:
     * "generator that uses Time.now and finds a significant historical event from the past that occurred on the same month/day"
     {% iframe path="interactive-code-generator" example="false" /%}
-* Paste the result from above into `historical_event_generator.rb`
+* Paste the result from above into `historical_event_generator.rb` (rename if needed)
 * Write the following code in `historical_event_finder.rb`:
   ```ruby
   # historical_event_finder.rb
