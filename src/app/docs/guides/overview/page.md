@@ -12,13 +12,6 @@ Discord](https://discord.gg/pWZ689GW7U).
 
 ## List of Guides
 
-### [Running Models Locally](/docs/guides/running-local-models)
-A guide on the recommended way to set up and run LLMs locally to interface with Sublayer.
-
-* Learn how to set up [llamafile](https://github.com/Mozilla-Ocho/llamafile)
-* Learn which models we recommend for local use
-* Learn how to point Sublayer to your locally running server
-
 ### [Rails Voice Chat with LLM](/docs/guides/voice-chat)
 A Ruby on Rails app that uses OpenAI's Speech to Text and Text to Speech APIs to
 enable voice chatting with an LLM.
