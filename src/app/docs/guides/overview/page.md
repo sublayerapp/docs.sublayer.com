@@ -35,6 +35,13 @@ LLM.
 * Learn how to build different types of Actions
 * Learn how a Generator can take multiple inputs to generate the output you want
 
+### [Running Models Locally](/docs/guides/running-local-models)
+A guide on the recommended way to set up and run LLMs locally to interface with Sublayer.
+
+* Learn how to set up [llamafile](https://github.com/Mozilla-Ocho/llamafile)
+* Learn which models we recommend for local use
+* Learn how to point Sublayer to your locally running server
+
 ### [Command Line Command Generator](/docs/guides/command-line-command-generator)
 A Ruby command line gem that lets you describe something you'd like to do on the
 command line, generates a command for you, and stores it in your clipboard.
