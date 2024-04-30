@@ -48,7 +48,8 @@ const tags = {
     selfClosing: true,
     render: Iframe,
     attributes: {
-      path: { type: String }
+      path: { type: String },
+      example: { type: String }
     }
   },
   'video-embed': {
