@@ -59,7 +59,7 @@ Sublayer.configuration.ai_model = "mixtral-8x7b-32768"
 
 ### Nous Research (Running locally):
 
-Follow our [local model set up instructions](/docs/guides/running-local-models)
+Follow our [local model set up instructions](/docs/guides/running-local-models-with-llamafile)
 
 Usage:
 

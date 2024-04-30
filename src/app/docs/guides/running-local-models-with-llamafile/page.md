@@ -1,9 +1,9 @@
 ---
-title: Run LLM Models Locally
+title: Run LLM Models Locally with Llamafile
 nextjs:
   metadata:
-    title: Run LLM Models Locally
-    description: Guide on how to set up local models to work with Sublayer.
+    title: Run LLM Models Locally with Llamafile
+    description: Guide on how to set up local models with llamafile to work with Sublayer.
 ---
 
 1. [Install Llamfile](#install-llamafile)
@@ -12,17 +12,19 @@ nextjs:
 4. [Use with Sublayer](#use-with-sublayer)
 5. [Basic Demo](#basic-demo)
 
-{% video-embed src="https://www.youtube.com/embed/6l67bUTyb2E?si=IGMSOLPsAIXANB0t" /%}
+{% video-embed src="https://www.youtube.com/embed/L0kTksoFaVM?si=Ltk41LtlNflobV8R" /%}
 
 ## Install [Llamafile](https://github.com/Mozilla-Ocho/llamafile) {% #install-llamafile %}
 1. ```bash
    git clone git@github.com:Mozilla-Ocho/llamafile.git
    ```
-2. [Click to download make](https://cosmo.zip/pub/cosmos/bin/make)
+2. ```bash
+   brew install make
+   ```
 3. ```bash
-   chmod +x /path/to/make
-   path/to/make -j8
-   sudo path/to/make install PREFIX=/usr/local
+   cd llamafile
+   gmake -j8
+   sudo gmake install PREFIX=/usr/local
    ```
 
 ## Download the [model](https://huggingface.co/models) {% #download-the-model %}
@@ -45,7 +47,7 @@ nextjs:
 ## Use with Sublayer (skip to [Basic Demo](#basic-demo) if you don't have a project) {% #use-with-sublayer %}
 1. Add to Gemfile:
     ```ruby
-    gem 'sublayer'
+    gem 'sublayer', '~>0.0.7'
     ```
 2. Run:
     ```bash
@@ -76,7 +78,7 @@ Let's make a ruby project to find a past historical event on today's date
 * ```ruby
   # Gemfile
   source 'https://rubygems.org'
-  gem 'sublayer'
+  gem 'sublayer', '~>0.0.7'
   ```
 * ```bash
   # bash

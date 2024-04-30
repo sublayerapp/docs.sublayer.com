@@ -28,7 +28,7 @@ LLM.
 * Learn how to build different types of Actions
 * Learn how a Generator can take multiple inputs to generate the output you want
 
-### [Running Models Locally](/docs/guides/running-local-models)
+### [Run LLM Models Locally with Llamafile](/docs/guides/running-local-models-with-llamafile)
 A guide on the recommended way to set up and run LLMs locally to interface with Sublayer.
 
 * Learn how to set up [llamafile](https://github.com/Mozilla-Ocho/llamafile)
