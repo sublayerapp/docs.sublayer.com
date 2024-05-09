@@ -40,8 +40,7 @@ const code = `class CodeFromDescriptionGenerator < Sublayer::Generators::Base
 end`
 
 const tabs = [
-  { name: 'code_from_description_generator.rb', isActive: true },
-  { name: 'phlex_component_generator.rb', isActive: false },
+  { name: 'code_from_description_generator.rb', isActive: true }
 ]
 
 function TrafficLightsIcon(props) {
@@ -139,7 +138,7 @@ export function Hero() {
                   <div className="mt-6 flex items-start px-1 text-sm">
                     <div
                       aria-hidden="true"
-                      className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600"
+                      className="select-none border-r text-xs border-slate-300/5 pr-4 font-mono text-slate-600"
                     >
                       {Array.from({
                         length: code.split('\n').length,
@@ -165,11 +164,11 @@ export function Hero() {
                         <pre
                           className={clsx(
                             className,
-                            'flex overflow-x-auto pb-6',
+                            'flex overflow-x-auto pb-6 text-xs',
                           )}
                           style={style}
                         >
-                          <code className="px-4">
+                          <code className="px-4 text-xs">
                             {tokens.map((line, lineIndex) => (
                               <div key={lineIndex} {...getLineProps({ line })}>
                                 {line.map((token, tokenIndex) => (
