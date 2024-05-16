@@ -35,7 +35,7 @@ nextjs:
 
 ## Run the model {% #run-the-model %}
 * ```bash
-  llamafile -ngl 9999 -m path/to/model.gguf —host 0.0.0.0 -c 2048
+  llamafile -ngl 9999 -m path/to/model.gguf --host 0.0.0.0 -c 2048
   ```
 * Recommended settings for Apple M1 users:
   ```bash
