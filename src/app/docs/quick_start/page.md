@@ -89,7 +89,7 @@ To learn more about everything you can do with a generator, check out the [Gener
 ### Step 3b - Try Generating One!
 Try generating your own generator with our interactive code generator below:
 
-{% iframe path="interactive-code-generator" /%}
+{% iframe path="interactive-code-generator/sublayer-generators" /%}
 
 
 ### Step 4 - Use Your Generator
