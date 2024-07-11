@@ -2,7 +2,7 @@
 title: Quick Links
 ---
 
-Sublayer is a model-agnostic AI Agent framework in Ruby that allows you to effortlessly integrate generative AI into your applications. {% .lead %}
+Sublayer is self-assembling, model-agnostic, AI Agent framework in Ruby that allows you to effortlessly create generative AI-powered automations. {% .lead %}
 
 {% quick-links %}
 

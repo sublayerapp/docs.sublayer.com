@@ -21,10 +21,9 @@ export const navigation = [
     title: 'Core concepts',
     links: [
       { title: 'Overview', href: '/docs/concepts/overview' },
+      { title: 'Agents', href: '/docs/concepts/agents', },
       { title: 'Generators', href: '/docs/concepts/generators' },
       { title: 'Actions', href: '/docs/concepts/actions', },
-      { title: 'Tasks', href: '/docs/concepts/tasks' },
-      { title: 'Agents', href: '/docs/concepts/agents', },
     ],
   },
   {
