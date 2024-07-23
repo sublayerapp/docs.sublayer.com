@@ -15,7 +15,7 @@ Finally, open [http://localhost:3000](http://localhost:3000) in your browser to 
 To have the iframe populate run blueprints.sublayer.com locally on 3001
 
 ```bash
-cd blueprints.sublayer.com
+cd blueprint-saas
 rails s -p 3001
 ```
 
