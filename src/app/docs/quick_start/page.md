@@ -104,7 +104,7 @@ Here's an example of how you might use the `CodeFromDescriptionGenerator` above:
 require 'sublayer'
 require './code_from_description_generator'
 
-generator = CodeFromDescriptionGenerator.new(description: 'a function that returns the first 10 happy numbers', technologies: ['ruby'])
+generator = Sublayer::Generators::CodeFromDescriptionGenerator.new(description: 'a function that returns the first 10 happy numbers', technologies: ['ruby'])
 
 puts generator.generate
 ```

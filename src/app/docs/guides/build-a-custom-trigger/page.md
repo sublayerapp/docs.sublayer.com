@@ -5,8 +5,7 @@ nextjs:
     title: Build a Custom Trigger
     description: Guide on how to Build a Custom Trigger for a Sublayer Agent.
 ---
-
-<!-- {% video-embed src="https://www.youtube.com/embed/L0kTksoFaVM?si=Ltk41LtlNflobV8R" /%} -->
+{% video-embed src="https://www.youtube.com/embed/UqaSRtoaOh4?si=MnQ2JWxj63IuPMzZ" /%}
 
 Let's make a simple time interval trigger for a hello world sublayer agent
 * ```bash
@@ -20,7 +19,7 @@ Let's make a simple time interval trigger for a hello world sublayer agent
 * ```ruby
   # Gemfile
   source 'https://rubygems.org'
-  gem 'sublayer', '~>0.1'
+  gem 'sublayer', '~>0.1.0'
   ```
 * ```bash
   # bash
