@@ -12,12 +12,12 @@ nextjs:
 4. [Basic Demo](#basic-demo)
 5. [Building a custom Provider](#build-custom-provider)
 
-{% video-embed src="https://www.youtube.com/embed/L0kTksoFaVM?si=Ltk41LtlNflobV8R" /%}
+{% video-embed src="https://www.youtube.com/embed/TPSWeFrN67w" /%}
 
 ## Install [Ollama](https://ollama.com/) {% #install-ollama %}
 * Visit [https://ollama.com/](https://ollama.com/) and download ollama
 
-## Download and run [llama3.1](https://ollama.com/library/llama3) {% #download-llama3 %}
+## Download and run [llama3.1](https://ollama.com/library/llama3.1) {% #download-llama3 %}
 *
   ```bash
   ollama run llama3.1
@@ -171,8 +171,10 @@ Let's make a ruby project to generate Dr. Seuss styled short poems
   ```
 
 ## Building a Custom Provider {% #build-custom-provider %}
-* Sublayer Gem comes with httparty
+* Coming Soon
+<!-- * Sublayer Gem comes with httparty
 * Find the url endpoint you need for llm chat completions
 * Find the request format for function calling
 * If no function calling exists [click here to find an example provider of custom response formatting](https://github.com/sublayerapp/sublayer/blob/0.0/lib/sublayer/providers/local.rb)
 * Take the response and parse for the desired value
+ -->
