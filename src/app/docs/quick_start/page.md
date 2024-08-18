@@ -21,7 +21,7 @@ and the technologies to use and generates code using an LLM like GPT-4.
 Install the Sublayer gem:
 
 ```shell
-$ gem install sublayer
+gem install sublayer
 ```
 
 or add it to your Gemfile:
@@ -107,6 +107,11 @@ require './code_from_description_generator'
 generator = Sublayer::Generators::CodeFromDescriptionGenerator.new(description: 'a function that returns the first 10 happy numbers', technologies: ['ruby'])
 
 puts generator.generate
+```
+
+Run the code:
+```shell
+ruby example.rb
 ```
 
 ### Next Steps
