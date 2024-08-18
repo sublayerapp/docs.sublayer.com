@@ -18,6 +18,42 @@ A detailed video and step by step instructions are coming soon, in the meantime,
 we've called out the important parts of the repo above to help you get started
 with it.
 
+## Quickstart to Running the Sample App
+
+```shell
+git clone https://github.com/sublayerapp/rails_llm_voice_chat_example.git
+```
+
+```shell
+bundle install
+```
+
+```shell
+rails db:migrate
+```
+
+```shell
+export OPENAI_API_KEY=your_openai_api_key` 
+```
+
+<!-- should we use something like `.env` instead? -->
+
+```shell
+rails s
+```
+
+[http://127.0.0.1:3000/](http://127.0.0.1:3000/)
+Now hold the button and talk to the chat bot 😄
+
+```shell
+rails c
+```
+
+```ruby
+c = Conversation.last
+puts c.messages.map { |m| "#{m.role}: #{m.content}" }
+```
+
 ## Code Walkthrough
 
 ### Sublayer Generators
