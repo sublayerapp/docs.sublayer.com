@@ -21,7 +21,7 @@ and the technologies to use and generates code using an LLM like GPT-4.
 Install the Sublayer gem:
 
 ```shell
-$ gem install sublayer
+gem install sublayer
 ```
 
 or add it to your Gemfile:
