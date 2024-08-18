@@ -109,6 +109,11 @@ generator = Sublayer::Generators::CodeFromDescriptionGenerator.new(description: 
 puts generator.generate
 ```
 
+Run the code:
+```shell
+ruby example.rb
+```
+
 ### Next Steps
 
 Now that you've created your first generator, you can:
