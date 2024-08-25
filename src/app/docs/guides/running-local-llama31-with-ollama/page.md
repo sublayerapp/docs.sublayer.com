@@ -50,6 +50,7 @@ To add a provider to an existing project:
                     "content": prompt
                   }
                 ],
+                "format": "json",
                 "stream": false,
                 "tools": [
                   {
@@ -128,6 +129,7 @@ Let's make a ruby project to generate Dr. Seuss styled short poems
               "content": prompt
             }
           ],
+          "format": "json",
           "stream": false,
           "tools": [
             {
